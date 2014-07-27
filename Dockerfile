@@ -1,4 +1,4 @@
-FROM eg5846/supervisor-docker
+FROM eg5846/supervisor-docker:trusty
 MAINTAINER Andreas Egner <andreas.egner@web.de>
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y polipo tor && apt-get clean
