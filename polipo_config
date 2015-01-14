@@ -1,4 +1,4 @@
-logSyslog = true
+logSyslog = false
 logFile = /var/log/polipo/polipo.log
 proxyAddress = "0.0.0.0"
 proxyPort = 8118
