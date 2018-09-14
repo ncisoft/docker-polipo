@@ -5,9 +5,9 @@ Dockerfile for polipo (tor proxy)
 ```
 git clone https://github.com/eg5846/docker-polipo.git
 cd docker-polipo
-sudo docker pull eg5846/ubuntu:xenial
+sudo docker pull ubuntu:bionic
 sudo docker build -t eg5846/polipo .
-sudo docker push eg5846/polipo
+#sudo docker push eg5846/polipo
 ```
 
 ## Run polipo docker container 

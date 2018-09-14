@@ -1,8 +1,10 @@
-FROM eg5846/ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Andreas Egner <andreas.egner@web.de>
 
-# Install packages
+# Update system and install packages
 RUN \
+  apt-get update && \
+  apt-get dist-upgrade -y && \
   apt-get install -y --no-install-recommends polipo && \
   apt-get clean
 
