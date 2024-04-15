@@ -1,6 +1,8 @@
-FROM ubuntu:bionic
+FROM ubuntu:xenial
 MAINTAINER Andreas Egner <andreas.egner@web.de>
 
+ADD 01acng /etc/apt/apt.conf.d/
+#ADD tuna.list /etc/apt/sources.list
 # Update system and install packages
 RUN \
   apt-get update && \
